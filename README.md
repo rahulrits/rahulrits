@@ -1,8 +1,4 @@
-- 👋 Hi, I’m @rahulrits
-- 👀 I’m interested in singing
-- 🌱 I’m currently learning music
-- 💞️ I’m looking to collaborate on music
-- 📫 How to reach me ...
+Aspiring Engineer | Innovation Passionate | Committed to Future-Proofing Through Problem-Solving
 
 <!---
 rahulrits/rahulrits is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
