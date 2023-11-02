@@ -1,0 +1,63 @@
+#include <stdio.h>
+int fibonacci_series(int number)
+{
+    int a[number];
+    int temp;
+    temp=number-2;
+    a[0] = 1;
+    a[1] = 1;
+    
+    printf("The fibonacci series upto %d terms.\n",number);
+    printf("%d\n%d\n",a[0],a[1]);
+
+    for (int i = 2; i <= temp + 1; i++)
+    {
+        a[i]=a[i-1]+a[i-2];
+        printf("%d\n",a[i]);
+    }
+    
+   
+}
+
+int main()
+{
+    while (1)
+    {
+        int n;
+        printf("Enter the term upto which you want to print the Fibonacci series.\n");
+        scanf("%d", &n);
+
+        if (n <= 0)
+        {
+            printf("Invalid input..  Re enter the positive number.\n");
+        }
+
+        else
+        {
+            fibonacci_series(n);
+        }
+
+        while (1)
+        {
+            char inp;
+            printf("Do you like to continue? (y/n)\n");
+            scanf(" %c", &inp);
+
+            if (inp == 'n')
+            {
+                return 0;
+            }
+
+            else if (inp == 'y')
+            {
+                break;
+            }
+
+            else if (inp != 'y')
+            {
+                printf("Invalid input...  Please enter 'y' to continue 'n' to exit\n\n");
+            }
+        }
+    }
+    return 0;
+}
